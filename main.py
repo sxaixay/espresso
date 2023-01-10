@@ -47,10 +47,10 @@ class Crcl(QMainWindow, Ui_MainWindow):
         if self.flg:
             painter = QPainter()
             painter.begin(self)
-            self.draw(painter)
+            self.drawer(painter)
             painter.end()
 
-    def draw(self, painter):
+    def drawer(self, painter):
         painter.setBrush(QBrush(QColor(choice(range(0, 256)), choice(range(0, 256)), choice(range(0, 256)))))
         painter.setPen(QColor(0, 0, 0))
         x = choice(range(50, 300))
